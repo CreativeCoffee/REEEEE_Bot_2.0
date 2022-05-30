@@ -39,7 +39,7 @@ module.exports = {
         ),
     async execute(interaction) {
         function getRandomInteger(int) {
-            const number = Math.floor(Math.random() * int + 1);
+            const number = Math.floor(Math.random() * int + 1); 
             return number.toString();
         }
        switch(interaction.options.getString("dice")) {
