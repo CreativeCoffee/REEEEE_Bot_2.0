@@ -19,12 +19,11 @@ module.exports = {
         }
         //console.log(numbers) // full array
         const numbers_adjusted = numbers.sort().filter((_,n) => n)
-        console.log(numbers_adjusted)
         const total = numbers_adjusted.reduce((partialSum, a) => partialSum + a, 0);
         totals.push(total)
-        console.log(totals)
         number_of_stats++
     }
+        console.log(totals)
         const embed = new MessageEmbed()
             .setColor('#0099ff')
             .setTitle("D&D Stat Roller")
