@@ -36,7 +36,8 @@ module.exports = {
             'Very doubtful.' 
         ];
         //console.log(answers.random())
-        await interaction.reply(answers.random())
+        await interaction.reply(`You asked: ${interaction.options.getString('question')}`)
+        await interaction.followUp(`8Ball says... ${answers.random()}`)
 
     },
 };
